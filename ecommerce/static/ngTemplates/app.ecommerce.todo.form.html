@@ -1,0 +1,52 @@
+<style>
+
+  .main-div {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    transform: translate(-50% , 30%)
+    height:500px;
+    width: 400px;
+    box-shadow: 3px -1px 8px #80808052;
+    padding: 10px 61px;
+
+  }
+
+  textarea{
+    padding:10px;
+    font-size:18px;
+    border: none;
+    background: #f7f7f791;
+  }
+
+  .input1{
+    padding: 10px;
+    font-size:18px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #80808063;
+    border-radius: none;
+    background: transparent;
+    width: 200px;
+    padding:10px
+    font-size:18px;
+  }
+
+  .input1:hover{
+    border-bottom: 1px solid blue;
+    border-radius: 0;
+  }
+
+</style>
+
+
+<div class="col-md-8" style="position:relative;padding: 37px;" ng-controller="businessManagement.ecommerce.todo.form">
+  <div class="main-div" >
+    <h2 style="padding-bottom:10px;"> Create a Card</h2>
+
+  <input type="text" class="form-control input1" name="" value="" placeholder="Title" ng-model="data.title" > <br>
+    <input type="text" name="" value="" placeholder="names" ng-model="data.name" class="form-control input1"> <br> <br>
+  <textarea type="" name="" value="" placeholder="Discription" ng-model="data.details"> </textarea><br> <br>
+    <button type="button" name="button" ng-click="submit()" class="btn btn-primary">submit</button>
+  </div>
+</div>
